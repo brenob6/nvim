@@ -42,15 +42,6 @@ let g:tagbar_foldlevel=2
 
 let g:airline_section_y='%{strftime("%H:%M")}'
 
-"Arruma o copy paste.
-let s:clip = '/mnt/c/Windows/System32/clip.exe'  " change this path according to your mount point
-if executable(s:clip)
-    augroup WSLYank
-        autocmd!
-        autocmd TextYankPost * if v:event.operator ==# 'y' | call system(s:clip, @0) | endif
-    augroup END
-endif
-
 "Colorchme gruv
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
