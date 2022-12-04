@@ -1,3 +1,4 @@
+:set number
 :set relativenumber
 :set autoindent
 :set tabstop=4
@@ -13,31 +14,25 @@
 :set guicursor=v:block-highlight,i:ver1
 :set termguicolors
 :set cursorline
+:set completeopt=menu,menuone,noselect
+:set textwidth=80
 
 call plug#begin()
 
-Plug 'https://github.com/preservim/nerdtree'
-Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/tpope/vim-surround.git'
-Plug 'ayu-theme/ayu-vim'
-Plug 'ryanoasis/vim-devicons'
+Plug 'https://github.com/jiangmiao/auto-pairs.git'
+
+" LSP plugins
+Plug 'neovim/nvim-lspconfig'
+" CMP plugins
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/cmp-vsnip'
 
 call plug#end()
 
-" Toggle nerd tree view
-nnoremap <C-t> :NERDTreeToggle<CR>
-
-" Navigate between tabs
-nnoremap <C-j> :tabp<CR>
-nnoremap <C-k> :tabn<CR>
-
-let ayucolor="dark"
-
-" NERDTree config
-let g:NERDTreeMinimalUI=1
-let g:NERDTreeWinPos="right"
-let g:NERDTreeQuitOnOpen=1
-
-let g:airline_section_y='%{strftime("%H:%M")}'
-
-colorscheme ayu
+lua require('mod/init')
