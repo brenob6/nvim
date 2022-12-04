@@ -1,3 +1,1 @@
-require('ayu').setup({
-
-})
+require('ayu').setup({})

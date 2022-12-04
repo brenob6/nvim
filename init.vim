@@ -17,6 +17,8 @@
 :set completeopt=menu,menuone,noselect
 :set textwidth=80
 
+:colorscheme ayu
+
 call plug#begin()
 
 Plug 'https://github.com/tpope/vim-surround.git'
@@ -34,5 +36,6 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/cmp-vsnip'
 
 call plug#end()
+
 
 lua require('mod/init')
