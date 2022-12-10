@@ -24,16 +24,6 @@ call plug#begin()
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'https://github.com/jiangmiao/auto-pairs.git'
 
-" LSP plugins
-Plug 'neovim/nvim-lspconfig'
-
-" CMP plugins
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/cmp-path'
-Plug 'hrsh7th/cmp-cmdline'
-Plug 'hrsh7th/nvim-cmp'
-
 call plug#end()
 
 
