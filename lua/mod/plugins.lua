@@ -23,11 +23,12 @@ packer.init {
 return packer.startup(function(use)
 
 	use { "shatur/neovim-ayu" }
-
+	-- Telescope --
 	use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
 	}	
+	use{ "nvim-telescope/telescope-media-files.nvim" }
 
 	use {
 	  'nvim-lualine/lualine.nvim',

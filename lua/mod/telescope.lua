@@ -1,4 +1,8 @@
-require('telescope').setup{
+telescope = require('telescope')
+
+telescope.load_extension('media_files')
+
+telescope.setup{
   defaults = {
     -- Default configuration for telescope goes here:
     -- config_key = value,
@@ -21,10 +25,9 @@ require('telescope').setup{
     -- builtin picker
   },
   extensions = {
-    -- Your extension configuration goes here:
-    -- extension_name = {
-    --   extension_config_key = value,
-    -- }
-    -- please take a look at the readme of the extension you want to configure
-  }
+	media_files = {
+		filetypes = {"png", "webp", "jpg", "pdf"},
+		find_cmd = "rg"
+	},
+  },
 }
