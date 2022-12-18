@@ -7,7 +7,7 @@ require('mod.treesitter')
 require('mod.nvim-tree')
 require('mod.keymaps')
 
-require('mod.lspconfig')
+require('mod.lsp')
 
 -- Auto Complete
 require('mod.cmpconfig')

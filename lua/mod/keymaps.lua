@@ -29,3 +29,4 @@ keymap("n", "<M-t>", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope --
 keymap("n", "<Leader>f", ":Telescope find_files<CR>", opts)
+

@@ -27,7 +27,7 @@ telescope.setup{
   extensions = {
 	media_files = {
 		filetypes = {"png", "webp", "jpg", "pdf"},
-		find_cmd = "rg"
+		find_cmd = "find"
 	},
   },
 }

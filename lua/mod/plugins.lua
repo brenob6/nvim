@@ -21,8 +21,21 @@ packer.init {
 }
 
 return packer.startup(function(use)
+	-- LSP --
+	use "neovim/nvim-lspconfig"
+	use "williamboman/mason.nvim"
+	use "williamboman/mason-lspconfig.nvim"
 
+	-- CMP --
+	use "hrsh7th/nvim-cmp"
+	use "hrsh7th/cmp-nvim-lsp"
+
+	-- Snippets -- 
+	use { "dcampos/nvim-snippy" }	
+
+	-- Colerschemes -- 
 	use { "shatur/neovim-ayu" }
+
 	-- Telescope --
 	use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.x',
@@ -47,6 +60,11 @@ return packer.startup(function(use)
 
 	use {
 		"nvim-treesitter/nvim-treesitter",
-		run = ':TSUpdate'
+		run = ':TSUpdate',
+		requires = {
+			"windwp/nvim-ts-autotag"
+		}
 	}
+
+	use "wbthomason/packer.nvim"
 end)

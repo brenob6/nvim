@@ -1,12 +1,15 @@
 local configs = require "nvim-treesitter.configs"
 local hi = require "nvim-treesitter.highlight"
 
--- vim.treesitter.highlighter.hl_map.error = nil
 
 configs.setup {
 	ensure_installed = {
 		"c",
-		"python"
+		"python",
+		"html",
+		"javascript",
+		"lua",
+		"vim"
 	},
 	sync_install = false,
 	ignore_install = {""},
@@ -15,5 +18,11 @@ configs.setup {
 		disable = {""},
 		additional_vim_regex_highlight = true,
 	},
-	indent = {enable = true},	
+	indent = {
+		enable = true,
+		disable = {'python'}
+	},	
+	autotag = {
+		enable = true,
+	},
 }
