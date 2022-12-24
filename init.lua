@@ -15,3 +15,6 @@ require('mod.lsp')
 -- Auto Complete
 require('mod.cmpconfig')
 require('mod.nvim-snippy')
+
+require('nvim-surround').setup()
+require('nvim-autopairs').setup()
