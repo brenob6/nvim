@@ -30,6 +30,8 @@ return packer.startup(function(use)
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-nvim-lsp"
 
+	use "windwp/nvim-autopairs"
+
 	-- Snippets -- 
 	use { "dcampos/nvim-snippy" }	
 
@@ -65,6 +67,10 @@ return packer.startup(function(use)
 			"windwp/nvim-ts-autotag"
 		}
 	}
+	use "kylechui/nvim-surround" 
+
+	use "akinsho/toggleterm.nvim"
+	use "akinsho/bufferline.nvim"
 
 	use "wbthomason/packer.nvim"
 end)
