@@ -7,8 +7,8 @@ require('mod.treesitter')
 require('mod.nvim-tree')
 require('mod.keymaps')
 require('mod.toggleterm')
-require('mod.bufferline')
 require('mod.options')
+require('mod.tabline')
 
 require('mod.lsp')
 
