@@ -70,7 +70,8 @@ return packer.startup(function(use)
 	use "kylechui/nvim-surround" 
 
 	use "akinsho/toggleterm.nvim"
-	use "akinsho/bufferline.nvim"
+
+	use "alvarosevilla95/luatab.nvim"
 
 	use "wbthomason/packer.nvim"
 end)

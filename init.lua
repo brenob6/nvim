@@ -8,7 +8,6 @@ require('mod.nvim-tree')
 require('mod.keymaps')
 require('mod.toggleterm')
 require('mod.options')
-require('mod.tabline')
 
 require('mod.lsp')
 
@@ -18,3 +17,4 @@ require('mod.nvim-snippy')
 
 require('nvim-surround').setup()
 require('nvim-autopairs').setup()
+require('luatab').setup()
