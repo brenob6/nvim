@@ -4,6 +4,9 @@ if not status_ok then
 end
 
 nvim_tree.setup({
+	view = {
+		hide_root_folder = true
+	},
 	actions = {
 		open_file = {
 			quit_on_open = true

@@ -1,7 +1,6 @@
 local configs = require "nvim-treesitter.configs"
 local hi = require "nvim-treesitter.highlight"
 
-
 configs.setup {
 	ensure_installed = {
 		"c",
@@ -9,7 +8,9 @@ configs.setup {
 		"html",
 		"javascript",
 		"lua",
-		"vim"
+		"vim",
+		"markdown",
+		"typescript"
 	},
 	sync_install = false,
 	ignore_install = {""},
@@ -24,5 +25,13 @@ configs.setup {
 	},	
 	autotag = {
 		enable = true,
+		filetypes = {
+			'html', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'vue', 'tsx', 'jsx',
+			'xml',
+			'markdown',
+		},
+		skip_tags = {
+			'br', 'hr', 'img', 'input', 'link', 'meta'
+		}
 	},
 }

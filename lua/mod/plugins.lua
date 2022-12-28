@@ -26,11 +26,15 @@ return packer.startup(function(use)
 	use "williamboman/mason.nvim"
 	use "williamboman/mason-lspconfig.nvim"
 
+	use "jose-elias-alvarez/null-ls.nvim"
+	use "MunifTanjim/prettier.nvim"
+
 	-- CMP --
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-nvim-lsp"
 
 	use "windwp/nvim-autopairs"
+	use "kylechui/nvim-surround" 
 
 	-- Snippets -- 
 	use { "dcampos/nvim-snippy" }	
@@ -59,7 +63,8 @@ return packer.startup(function(use)
 		},
 		tag = "nightly"
 	}
-
+	use "alvarosevilla95/luatab.nvim"
+	
 	use {
 		"nvim-treesitter/nvim-treesitter",
 		run = ':TSUpdate',
@@ -67,11 +72,8 @@ return packer.startup(function(use)
 			"windwp/nvim-ts-autotag"
 		}
 	}
-	use "kylechui/nvim-surround" 
 
 	use "akinsho/toggleterm.nvim"
-
-	use "alvarosevilla95/luatab.nvim"
 
 	use "wbthomason/packer.nvim"
 end)
