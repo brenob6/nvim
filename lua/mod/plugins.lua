@@ -29,6 +29,9 @@ return packer.startup(function(use)
 	use "jose-elias-alvarez/null-ls.nvim"
 	use "MunifTanjim/prettier.nvim"
 
+	-- JAVA --
+	use "mfussenegger/nvim-jdtls"
+
 	-- CMP --
 	use "hrsh7th/nvim-cmp"
 	use "hrsh7th/cmp-nvim-lsp"
