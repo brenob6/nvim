@@ -29,4 +29,6 @@ keymap("n", "<M-t>", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope --
 keymap("n", "<Leader>f", ":Telescope find_files<CR>", opts)
+keymap("n", "<Leader>t", ":Telescope builtin<CR>", opts)
+keymap("n", "<Leader>s", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 

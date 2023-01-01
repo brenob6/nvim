@@ -3,9 +3,20 @@ telescope = require('telescope')
 telescope.load_extension('media_files')
 
 telescope.setup{
-  defaults = {
+	defaults = {
     -- Default configuration for telescope goes here:
     -- config_key = value,
+		layout_config = {
+			center = {
+				width = 0.9
+			},
+			horizontal = {
+				height = 0.9,
+				preview_cutoff = 80,
+				width = 0.8,
+				prompt_position = "bottom"
+			},
+		},
     mappings = {
       i = {
         -- map actions.which_key to <C-h> (default: <C-/>)
@@ -16,13 +27,9 @@ telescope.setup{
     }
   },
   pickers = {
-    -- Default configuration for builtin pickers goes here:
-    -- picker_name = {
-    --   picker_config_key = value,
-    --   ...
-    -- }
-    -- Now the picker_config_key will be applied every time you call this
-    -- builtin picker
+		current_buffer_fuzzy_find = {
+			theme = "dropdown",
+		},
   },
   extensions = {
 	media_files = {

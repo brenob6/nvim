@@ -45,6 +45,7 @@ return packer.startup(function(use)
 	-- Colerschemes -- 
 	use { "shatur/neovim-ayu" }
 
+	use "lukas-reineke/indent-blankline.nvim"
 	-- Telescope --
 	use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.x',
