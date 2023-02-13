@@ -9,12 +9,12 @@ nvim_tree.setup({
 		hide_root_folder = true,
 		side = "right",
 		float = {
-			enable = true
+			enable = false
 		}
 	},
 	actions = {
 		open_file = {
-			quit_on_open = false,
+			quit_on_open = true,
 			window_picker = {
 				enable = false
 			},

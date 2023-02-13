@@ -44,6 +44,7 @@ return packer.startup(function(use)
 
 	-- Colerschemes -- 
 	use { "shatur/neovim-ayu" }
+	use { "ellisonleao/gruvbox.nvim"}
 
 	use "lukas-reineke/indent-blankline.nvim"
 	-- Telescope --

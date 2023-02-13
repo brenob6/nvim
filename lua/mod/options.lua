@@ -20,5 +20,7 @@ vim.opt.showmode = false
 vim.opt.cursorline = true
 vim.opt.termguicolors = true
 
-vim.cmd "colorscheme ayu"
---vim.cmd "hi CursorLine guibg=#000010"
+vim.o.background = "dark"
+
+vim.cmd "noswapfile"
+vim.cmd "colorscheme gruvbox"

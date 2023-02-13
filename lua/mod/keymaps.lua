@@ -25,10 +25,10 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 
 -- NvimTree --
-keymap("n", "<M-t>", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<Leader>t", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope --
 keymap("n", "<Leader>f", ":Telescope find_files<CR>", opts)
-keymap("n", "<Leader>t", ":Telescope builtin<CR>", opts)
+keymap("n", "<Leader>b", ":Telescope builtin<CR>", opts)
 keymap("n", "<Leader>s", ":Telescope current_buffer_fuzzy_find<CR>", opts)
 

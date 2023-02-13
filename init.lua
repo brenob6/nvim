@@ -1,8 +1,7 @@
 -- Colorscheme
-require('mod.ayu')
+require('mod.plugins')
 require('mod.telescope')
 require('mod.lualine')
-require('mod.plugins')
 require('mod.treesitter')
 require('mod.nvim-tree')
 require('mod.keymaps')
