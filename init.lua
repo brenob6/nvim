@@ -1,7 +1,7 @@
 -- Colorscheme
 require('mod.plugins')
 require('mod.telescope')
-require('mod.lualine')
+--require('mod.lualine')
 require('mod.treesitter')
 require('mod.nvim-tree')
 require('mod.keymaps')

@@ -55,7 +55,7 @@ return packer.startup(function(use)
 	use{ "nvim-telescope/telescope-media-files.nvim" }
 
 	use {
-	  'nvim-lualine/lualine.nvim',
+--	  'nvim-lualine/lualine.nvim',
 --	  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
 

@@ -1,7 +1,7 @@
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'gruvbox',
+    --theme = '',
     --component_separators = { left = '', right = ''},
     --section_separators = { left = '', right = ''},
     component_separators = { left = '', right = ''},
@@ -38,5 +38,9 @@ require('lualine').setup {
   tabline = {},
   winbar = {},
   inactive_winbar = {},
-  extensions = {}
+  extensions = {
+		'quickfix',
+		'nvim-tree',
+		'toggleterm'
+		}
 }

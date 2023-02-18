@@ -10,7 +10,7 @@ configs.setup {
 		"lua",
 		"vim",
 		"markdown",
-		"typescript"
+		"tsx"
 	},
 	sync_install = false,
 	ignore_install = {""},
@@ -26,7 +26,7 @@ configs.setup {
 	autotag = {
 		enable = true,
 		filetypes = {
-			'html', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact', 'vue', 'tsx', 'jsx',
+			'html', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact',
 			'xml',
 			'markdown',
 		},
