@@ -45,6 +45,7 @@ return packer.startup(function(use)
 	-- Colerschemes -- 
 	use { "shatur/neovim-ayu" }
 	use { "ellisonleao/gruvbox.nvim"}
+	use { "ray-x/aurora" }
 
 	use "lukas-reineke/indent-blankline.nvim"
 	-- Telescope --
@@ -77,7 +78,10 @@ return packer.startup(function(use)
 			"windwp/nvim-ts-autotag"
 		}
 	}
-
+	-- Highlight colors
+	use "brenoprata10/nvim-highlight-colors"
+	-- Transparent
+	use "xiyaowong/transparent.nvim"
 	use "akinsho/toggleterm.nvim"
 
 	use "wbthomason/packer.nvim"

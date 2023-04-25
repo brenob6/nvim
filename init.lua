@@ -19,6 +19,8 @@ require('mod.nvim-snippy')
 require('nvim-surround').setup()
 require('nvim-autopairs').setup()
 require('luatab').setup()
+require('nvim-highlight-colors').setup{}
+require('transparent').setup{}
 
 vim.cmd [[
 	autocmd FileType java,c setlocal shiftwidth=4 tabstop=4
