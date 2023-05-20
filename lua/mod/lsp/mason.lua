@@ -39,6 +39,11 @@ for _, server in pairs(servers) do
 
 	server = vim.split(server, "@")[1]
 
+	if serve == "pyright" then
+		local pyright_opts = require "mod.lsp.settings.pyright"
+		opts = vim.tbl_deep_extend("force", pyright_opts, opts)
+	end
+
 	if server == "jdtls" then
 		goto continue
 	end
