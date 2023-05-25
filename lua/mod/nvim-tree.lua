@@ -5,6 +5,13 @@ end
 
 nvim_tree.setup({
 	open_on_tab = false,
+	respect_buf_cwd = true,
+	tab = {
+		sync = {
+			open = true,
+			close = true
+		},
+	},
 	view = {
 		hide_root_folder = true,
 		side = "right",
@@ -14,7 +21,7 @@ nvim_tree.setup({
 	},
 	actions = {
 		open_file = {
-			quit_on_open = true,
+			quit_on_open = false,
 			window_picker = {
 				enable = false
 			},
@@ -27,4 +34,7 @@ nvim_tree.setup({
 		enable = true,
 		show_on_dirs = false
 	},
+	filters = {
+		custom = {"__pycache__", ".vscode"}
+	}
 })
