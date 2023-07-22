@@ -44,21 +44,14 @@ return packer.startup(function(use)
 
 	-- Colerschemes -- 
 	use { "shatur/neovim-ayu" }
-	use { "ellisonleao/gruvbox.nvim"}
-	use { "ray-x/aurora" }
 
 	use "lukas-reineke/indent-blankline.nvim"
+
 	-- Telescope --
 	use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
 	}	
-	use{ "nvim-telescope/telescope-media-files.nvim" }
-
-	use {
---	  'nvim-lualine/lualine.nvim',
---	  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-	}
 
 	use {"nvim-lua/popup.nvim"}
 
@@ -69,8 +62,13 @@ return packer.startup(function(use)
 		},
 		tag = "nightly"
 	}
+	-- Tmux
+	use "christoomey/vim-tmux-navigator"
+
+	-- Tab
 	use "alvarosevilla95/luatab.nvim"
-	
+	use "akinsho/bufferline.nvim"	
+
 	use {
 		"nvim-treesitter/nvim-treesitter",
 		run = ':TSUpdate',
@@ -80,9 +78,6 @@ return packer.startup(function(use)
 	}
 	-- Highlight colors
 	use "brenoprata10/nvim-highlight-colors"
-	-- Transparent
-	use "xiyaowong/transparent.nvim"
-	use "akinsho/toggleterm.nvim"
 
 	use "wbthomason/packer.nvim"
 end)
