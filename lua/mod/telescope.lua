@@ -1,7 +1,5 @@
 telescope = require('telescope')
 
-telescope.load_extension('media_files')
-
 telescope.setup{
 	defaults = {
     -- Default configuration for telescope goes here:
@@ -30,11 +28,5 @@ telescope.setup{
 		current_buffer_fuzzy_find = {
 			theme = "dropdown",
 		},
-  },
-  extensions = {
-	media_files = {
-		filetypes = {"png", "webp", "jpg", "pdf"},
-		find_cmd = "find"
-	},
   },
 }
