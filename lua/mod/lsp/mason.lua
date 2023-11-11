@@ -2,7 +2,8 @@ local servers = {
 	"jdtls",
 	"pyright",
 	"clangd",
-	"tsserver"
+	"tsserver",
+	"gopls"
 }
 
 local settings = {

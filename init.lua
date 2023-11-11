@@ -16,7 +16,7 @@ require('nvim-surround').setup()
 require('nvim-autopairs').setup()
 require('luatab').setup()
 require('nvim-highlight-colors').setup{}
-require('ayu').colorscheme()
+--require('ayu').colorscheme()
 
 vim.cmd [[
 	autocmd FileType java,c setlocal shiftwidth=4 tabstop=4

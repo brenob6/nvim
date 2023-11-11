@@ -2,7 +2,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.backup = false
 vim.opt.clipboard = "unnamedplus"
---vim.opt.pumheight = 10
+vim.opt.pumheight = 10
 vim.opt.mouse = "n"
 
 vim.opt.smartindent = true
@@ -25,5 +25,4 @@ vim.opt.termguicolors = true
 
 vim.o.background = "dark"
 
---vim.cmd "noswapfile"
-vim.cmd "colorscheme ayu"
+-- vim.cmd "colorscheme ayu"
