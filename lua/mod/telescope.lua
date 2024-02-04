@@ -1,32 +1,18 @@
-telescope = require('telescope')
+local actions = require("telescope.actions")
+local actions_generate = require("telescope.actions.generate")
 
-telescope.setup{
+require('telescope').setup{
 	defaults = {
-    -- Default configuration for telescope goes here:
-    -- config_key = value,
-		layout_config = {
-			center = {
-				width = 0.9
+		preview = false,
+		mappings = {
+			i = {
+				["<esc>"] = actions.close,
 			},
-			horizontal = {
-				height = 0.9,
-				preview_cutoff = 80,
-				width = 0.8,
-				prompt_position = "bottom"
-			},
-		},
-    mappings = {
-      i = {
-        -- map actions.which_key to <C-h> (default: <C-/>)
-        -- actions.which_key shows the mappings for your picker,
-        -- e.g. git_{create, delete, ...}_branch for the git_branches picker
-        ["<C-h>"] = "which_key"
-      }
-    }
-  },
-  pickers = {
-		current_buffer_fuzzy_find = {
+		}
+	},
+	pickers = {
+		find_files = {
 			theme = "dropdown",
 		},
-  },
+	},
 }
